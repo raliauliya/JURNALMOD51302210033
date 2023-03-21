@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JURNALMOD5_1302210033", "JURNALMOD5_1302210033\JURNALMOD5_1302210033.csproj", "{67587E20-15E1-4EC0-803F-780D54AF9C18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67587E20-15E1-4EC0-803F-780D54AF9C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67587E20-15E1-4EC0-803F-780D54AF9C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67587E20-15E1-4EC0-803F-780D54AF9C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67587E20-15E1-4EC0-803F-780D54AF9C18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97C1915F-89E6-463C-BD4C-583AC5DC1AE7}
+	EndGlobalSection
+EndGlobal
