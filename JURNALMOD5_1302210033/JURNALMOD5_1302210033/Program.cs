@@ -4,21 +4,36 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Penjumlahan angka = new Penjumlahan();
-        Console.WriteLine(angka.JumlahTigaAngka<double>(13,02,21));
-
+        SimpleDataBase<double> database = new SimpleDataBase<double>();
+        database.AddNewData(1.3);
+        database.AddNewData(0.2);
+        database.AddNewData(2.1);
+        database.PrintAllData();
     }
 }
 
-public class Penjumlahan
+public class SimpleDataBase<T>
 {
-    public T JumlahTigaAngka<T>(T input1, T input2, T input3)
+    List<T> storedData;
+    List<DateTime> inputDates = new List<DateTime>();
+    public SimpleDataBase()
     {
-        dynamic angka1 = input1;
-        dynamic angka2 = input2;
-        dynamic angka3 = input3;
-        return angka1 + angka2 + angka3;
+        storedData = new List<T>();
+    }
+    public void AddNewData(T data)
+    {
+        storedData.Add(data);
+        inputDates.Add(DateTime.Now);
+    }
 
-        
+    public void PrintAllData()
+    {
+        for(int i = 0; i < storedData.Count; i++)
+        {
+            Console.WriteLine("Data " + (i + 1) + " berisi: " + storedData[i] + ", yang disimpan pada waktu UTC: " + inputDates[i]);
+
+        }
     }
 }
+
+
